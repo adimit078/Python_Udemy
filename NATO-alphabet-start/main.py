@@ -23,7 +23,6 @@ for (index, row) in student_data_frame.iterrows():
 {"A": "Alfa", "B": "Bravo"}
 nato = pandas.read_csv("nato_phonetic_alphabet.csv")
 letter_dict = {row.letter:row.code for (index,row) in nato.iterrows()}
-print(letter_dict)
 
 word_list = list(input("Enter a word please: "))
 new_list = [letter_dict[item.upper()] for item in word_list]
