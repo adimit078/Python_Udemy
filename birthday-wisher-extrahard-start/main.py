@@ -13,7 +13,7 @@ for (index,row) in data.iterrows():
     print(row.values)
 
 # 2. Check if today matches a birthday in the birthdays.csv
-curr_day = datetime.datetime.now().day
+curr_day = datetime.datetime.now().weekday()
 curr_month = datetime.datetime.now().month
 
 for (index,row) in data.iterrows():
