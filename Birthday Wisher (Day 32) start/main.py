@@ -33,8 +33,11 @@ import smtplib
 
 curr_day = dt.datetime.now().weekday()
 
-email = "udemytest555@gmail.com"
-password = "hsff yxll vwjd cbjb"
+# email = "udemytest555@gmail.com"
+# password = "hsff yxll vwjd cbjb"
+
+email = "toadityamittal@gmail.com"
+password = "kmlv cmst ypnm xyfh"
 
 with smtplib.SMTP("smtp.gmail.com") as connection:
     connection.starttls()
@@ -50,6 +53,4 @@ with smtplib.SMTP("smtp.gmail.com") as connection:
             rand_message = random.choice(lines)
 
         connection.sendmail(from_addr=email, to_addrs="toadityamittal@gmail.com",
-                            msg = f"Subject:Your Monday Motivational Message\n\nHere is your daily motivational quote:\n{rand_message}")
-        connection.sendmail(from_addr=email, to_addrs="acv49@cornell.edu",
-                            msg=f"Subject:Your Monday Motivational Message\n\nHere is your daily motivational quote:\n{rand_message}")
+                            msg = f"Subject:Your Monday Motivational Message\n\nHere is your weekly motivational quote:\n{rand_message}")
