@@ -26,7 +26,7 @@ for (index,row) in data.iterrows():
         with smtplib.SMTP("smtp.gmail.com") as connection:
             connection.starttls()
             connection.login(user=email, password=password)
-
+            
             connection.sendmail(from_addr=email, to_addrs=row.values[1], msg=f"Subject:Happy Birthday {row.values[0]} from Aditya\n\n{message}")
 
 
